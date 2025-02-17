@@ -1,12 +1,12 @@
 {
-  "name": "Emokui",
+  "name": "Megumi",
   "theme_color": "#a385f3",
   "display": "standalone",
   "start_url": "/",
   "icons": [
     {
       "src": "homescreen.png",
-      "sizes": "144x144",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ]
