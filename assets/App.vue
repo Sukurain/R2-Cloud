@@ -615,8 +615,8 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = `${
-          this.cwd.replace(/.*\/(?!$)|\//g, "") || "/"
-        } - 文件库`;
+          this.cwd.replace(/.*\/(?!$)|\//g, "") || ""
+        } Megumi`;
       },
       immediate: true,
     },
