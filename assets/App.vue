@@ -98,7 +98,7 @@
       </li>
       <li v-for="file in filteredFiles" :key="file.key">
         <div
-          @click="preview(`/raw/${file.key}`)"
+          @click="preview(`/neko/${file.key}`)"
           @contextmenu.prevent="
             showContextMenu = true;
             focusedItem = file;
@@ -109,7 +109,7 @@
               :content-type="file.httpMetadata.contentType"
               :thumbnail="
                 file.customMetadata.thumbnail
-                  ? `/raw/_$flaredrive$/thumbnails/${file.customMetadata.thumbnail}.png`
+                  ? `/neko/_$flaredrive$/thumbnails/${file.customMetadata.thumbnail}.png`
                   : null
               "
             />
@@ -174,7 +174,7 @@
           </button>
         </li>
         <li>
-          <a :href="`/raw/${focusedItem.key}`" target="_blank" download>
+          <a :href="`/neko/${focusedItem.key}`" target="_blank" download>
             <span>下载</span>
           </a>
         </li>
@@ -189,7 +189,7 @@
           </button>
         </li>
         <li>
-          <button @click="copyLink(`/raw/${focusedItem.key}`)">
+          <button @click="copyLink(`/neko/${focusedItem.key}`)">
             <span>复制链接</span>
           </button>
         </li>
