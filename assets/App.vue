@@ -615,7 +615,7 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = `${
-          this.cwd.replace(/.*\/(?!$)|\//g, "𝒐𝒇") ||
+          this.cwd.replace(/.*\/(?!$)|\//g, "") || ""
         } 𝑭𝒂𝒕𝒂𝒍𝒆𝒗𝒆𝒍`;
       },
       immediate: true,
