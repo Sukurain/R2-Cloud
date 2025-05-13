@@ -616,7 +616,7 @@ export default {
         }
         document.title = `${
           this.cwd.replace(/.*\/(?!$)|\//g, "") || "/"
-        } - 文件库`;
+        } 𝑭𝒂𝒕𝒂𝒍𝒆𝒗𝒆𝒍`;
       },
       immediate: true,
     },
